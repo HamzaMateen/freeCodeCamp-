@@ -1,2 +1,2 @@
-# freeCodeCamp-
-projects made during studying the FCC curriculum.
+# My freeCodeCamp Journey 
+Projects made while studying the FCC curriculum.
