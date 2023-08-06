@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Stories</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <h1 id="title">User Stories</h1>
+
+    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum optio id dolorem delectus ad ut corporis enim officiis natus ratione distinctio totam, harum, tempore consectetur? Accusantium corrupti excepturi sunt laudantium.</p>
+
+    <form action="post" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" placeholder="your name" required>
+
+            <label for="email" id="email-label">Email</label>
+            <input type="email" pattern="[a-z0-5]{8,}"  id="email" name="email" placeholder="youremail@example.com" required>
+
+            <label for="number" id="number-label">Number</label>
+            <input type="number" name="number" id="number" min="0" max="100" placeholder="age">
+        </fieldset>
+    
+        <fieldset>
+            <label for="dropdown">Select your language</label>
+
+            <select id="dropdown">
+                <option value="">(choose)</option>
+                <option value="1">English</option>
+                <option value="2">Urdu</option>
+            </select>
+
+            <input class="inline" type="radio" name="satifaction-status" value="happy" id="happy-with-service">
+            <label class="inline" for="happy-with-service">I am happy</label>
+
+            <br />
+
+            <input class="inline" type="radio" name="satifaction-status"  value="sad" id="sad-with-service" />
+            <label class="inline" for="sad-with-service">I am sad</label>
+        
+            <h4 id="stories-header">Stories that you like</h4>
+            <input class="inline" type="checkbox" value="fiction" id="fiction" checked>
+            <label class="inline" for="fiction">Fiction</label>
+
+            <input class="inline" type="checkbox" value="adventure" id="adventure">
+            <label class="inline" for="adventure">Adventure</label>
+            
+            <input class="inline" type="checkbox" value="thriller" id="thriller">
+            <label class="inline" for="thriller">Thriller</label>
+            
+            <input class="inline" type="checkbox" value="scifi" id="scifi">
+            <label class="inline" for="scifi">Sci-fi</label>
+            
+        </fieldset>
+            
+        <fieldset>
+            <h5 id="comment-header">Additional comments</h5>
+            <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+
+            <input type="submit" id="submit" value="SUBMIT"></input>
+        </fieldset>
+    </form>
+
+
+</body>
+</html>
